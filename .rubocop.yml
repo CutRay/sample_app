@@ -1,0 +1,25 @@
+Style/AsciiComments:
+  Enabled: false
+
+Style/Lambda:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/HashEachMethods:
+  Enabled: true
+  # For rubocop < 1.0.0
+Style/HashTransformKeys:
+  Enabled: true
+  # For rubocop < 1.0.0
+Style/HashTransformValues:
+  Enabled: true
+Style/FrozenStringLiteralComment:
+  Enabled: true
+AllCops:
+  Exclude:
+    - db/schema.rb
+    - config/unicorn.rb
+    - config/unicorn_staging.rb
+    - tmp/**/*
