@@ -8,6 +8,7 @@ git_source(:github) do |repo_name|
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'bcrypt',         '3.1.12'
 gem 'bootstrap-sass', '3.3.7'
 gem 'rails', '~> 5.1.6'
 # Use sqlite3 as the database for Active Record
@@ -39,6 +40,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   # Adds support for Capybara system testing and selenium driver
+  gem 'rails-controller-testing', '1.0.2'
   gem 'sqlite3'
 end
 
@@ -47,7 +49,6 @@ group :development do
   gem 'guard-minitest'
   gem 'minitest'
   gem 'minitest-reporters'
-  gem 'rails-controller-testing', '1.0.2'
 end
 
 group :production do
