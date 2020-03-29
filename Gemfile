@@ -10,7 +10,10 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'bcrypt',         '3.1.12'
 gem 'bootstrap-sass', '3.3.7'
+gem 'bootstrap-will_paginate'
+gem 'faker'
 gem 'rails', '~> 5.1.6'
+gem 'will_paginate'
 # Use sqlite3 as the database for Active Record
 
 # Use Puma as the app server
