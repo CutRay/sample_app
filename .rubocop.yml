@@ -17,6 +17,7 @@ Style/HashTransformValues:
   Enabled: true
 Style/FrozenStringLiteralComment:
   Enabled: true
+
 AllCops:
   Exclude:
     - db/schema.rb
