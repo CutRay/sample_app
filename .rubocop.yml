@@ -1,26 +1,67 @@
+AllCops:
+  Include:
+    - '**/Rakefile'
+    - '**/config.ru'
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'bundle_bin/*'
+    - 'bin/*'
+    - !ruby/regexp /old_and_unused\.rb$/
+Style/StringLiterals:
+  Enabled: false
+
 Style/AsciiComments:
   Enabled: false
 
 Style/Lambda:
   Enabled: false
 
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Naming/AccessorMethodName:
+  Enabled: false
+
 Style/Documentation:
   Enabled: false
 
+Layout/LineLength:
+  Max: 120
+
+Style/AndOr:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
 Style/HashEachMethods:
-  Enabled: true
-  # For rubocop < 1.0.0
+  Enabled: false
+
 Style/HashTransformKeys:
-  Enabled: true
-  # For rubocop < 1.0.0
+  Enabled: false
+
 Style/HashTransformValues:
-  Enabled: true
-Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Lint/RaiseException:
   Enabled: true
 
-AllCops:
-  Exclude:
-    - db/schema.rb
-    - config/unicorn.rb
-    - config/unicorn_staging.rb
-    - tmp/**/*
+Lint/StructNewOverride:
+  Enabled: true
